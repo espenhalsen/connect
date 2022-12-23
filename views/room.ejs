@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screensharing App</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js?roomId=<%= roomId %>"></script>
+  </head>
+  <body>
+    <h1>Screensharing App</h1>
+    <p>Room ID: <%= roomId %></p>
+    <div id="video-grid"></div>
+    <div id="control-panel">
+      <button id="enable-screen-share-button">Enable Screen Share</button>
+      <button id="disable-screen-share-button">Disable Screen Share</button>
+      <p>Number of users in room: <span id="user-count">1</span></p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
